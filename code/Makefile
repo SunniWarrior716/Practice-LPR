@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-CC       = gcc
-=======
-<<<<<<< Updated upstream
+
 CC = gcc
->>>>>>> ce6fab7 (Resolve Makefile merge conflict and configure Criterion for tests)
 
 # Criterion (Linux on cerf)
 CPPFLAGS = -I/util/criterion/include
