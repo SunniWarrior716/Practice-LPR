@@ -1,10 +1,10 @@
-CC = gcc
+CC       = gcc
 
-# Criterion include + lib paths (from lex22 on Linux)
+# Criterion (Linux on cerf)
 CPPFLAGS = -I/util/criterion/include
 CFLAGS   = -Wall -Wextra -pedantic -std=c11 -g -O0
 LDFLAGS  = -L/util/criterion/lib/x86_64-linux-gnu
-TEST_LIBS = -lcriterion
+LDLIBS   = -lcriterion
 
 SRC      = recipes.c main.c
 TEST_SRC = tests.c recipes.c
@@ -17,11 +17,13 @@ TEST_OBJ = $(TEST_SRC:.c=.o)
 all: main
 
 main: $(OBJ)
-	$(CC) $(CPPFLAGS) $(CFLAGS) -o main $(OBJ)
+	$(CC) $(CPPFLAGS) $(CFLAGS) -o $@ $(OBJ)
 
 tests: $(TEST_OBJ)
-	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o tests $(TEST_OBJ) $(TEST_LIBS)
+	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -o $@ $(TEST_OBJ) $(LDLIBS)
 
 clean:
 	rm -f *.o main tests *.gcno *.gcda *.gcov gmon.out
 	rm -f testResults.* gcovResults.* gprofResults.* valgrindResults.* callgrind.log
+
+
