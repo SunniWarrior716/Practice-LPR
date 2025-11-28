@@ -1,0 +1,62 @@
+Function 'freePantry'
+Lines executed:0.00% of 4
+
+Function 'freeBook'
+Lines executed:100.00% of 4
+
+Function 'freeRecipe'
+Lines executed:0.00% of 5
+
+Function 'freeIngredient'
+Lines executed:0.00% of 4
+
+Function 'withinCalorieLimit'
+Lines executed:0.00% of 12
+
+Function 'canMakeAll'
+Lines executed:0.00% of 14
+
+Function 'canMakeAny'
+Lines executed:0.00% of 16
+
+Function 'storeIngredient'
+Lines executed:0.00% of 15
+
+Function 'addIngredient'
+Lines executed:0.00% of 11
+
+Function 'addRecipe'
+Lines executed:0.00% of 9
+
+Function 'newPantry'
+Lines executed:0.00% of 7
+
+Function 'newIngredient'
+Lines executed:0.00% of 7
+
+Function 'newRecipe'
+Lines executed:0.00% of 10
+
+Function 'newBook'
+Lines executed:100.00% of 7
+
+Function 'pantry_available'
+Lines executed:0.00% of 6
+
+Function 'recipe_total_calories'
+Lines executed:0.00% of 7
+
+Function 'xrealloc'
+Lines executed:0.00% of 6
+
+Function 'dup_string'
+Lines executed:0.00% of 7
+
+File 'recipes.c'
+Lines executed:7.28% of 151
+Branches executed:3.64% of 110
+Taken at least once:1.82% of 110
+Calls executed:0.00% of 14
+Creating 'recipes.c.gcov'
+
+Lines executed:7.28% of 151
